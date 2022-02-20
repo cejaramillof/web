@@ -16,6 +16,26 @@ const config = {
   organizationName: 'cejaramillof',
   projectName: 'web.github.io',
   trailingSlash: false,
+  i18n: {
+    defaultLocale: 'es',
+    locales: ['es'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'es-ES',
+      },
+    },
+  },
+  plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        indexBlog: false,
+        indexPages: false,
+        language: "es",
+        style: undefined,
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
